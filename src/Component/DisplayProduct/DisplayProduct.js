@@ -17,7 +17,7 @@ const{name,img,price,features,stock,seller,star}=props.data;
                     <div className="add-cart">
                         <p><span>$ {price}</span></p>
                         <p>only {stock} left in stock -order now</p>
-                        <button className="resetButton"> add to cart</button>
+                        <button > add to cart</button>
                     </div>
                     <div className="features">
                         <p>ratings:{star}</p>

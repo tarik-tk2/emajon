@@ -5,7 +5,7 @@ const Feature = (props) => {
     const{description,value}=props.feature;
     return (
         <div>
-           <p>{description}:{value}</p>
+           <li>{description}:{value}</li>
         </div>
     );
 };
