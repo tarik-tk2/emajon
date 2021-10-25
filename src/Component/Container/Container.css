@@ -1,0 +1,13 @@
+.display-section{
+    display: flex;
+    width: 90;
+    margin-top: 10px;
+}
+.product{
+    width: 70%;
+    margin: auto;
+    border-right: 1px solid goldenrod;
+}
+.order-summary{
+    width: 30%;
+}
