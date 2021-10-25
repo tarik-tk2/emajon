@@ -4,6 +4,7 @@ import { useEffect ,useState} from 'react';
 import DisplayProduct from '../DisplayProduct/DisplayProduct';
 import Header from '../Header/Header';
 import NabBar from '../NavBar/NabBar';
+import Order from '../Order/Order';
 import './Container.css'
 const Container = () => {
      const [products,setProducts]=useState([]);
@@ -22,7 +23,8 @@ const Container = () => {
             {products.map(product => (<DisplayProduct key ={product.key} data={product}/>))}
                </div>
                <div className="order-summary">
-                 <h3>Order Summary</h3>
+                   <h3>Order Summary</h3>
+                <Order/>
                </div>
            </div>
         </div>

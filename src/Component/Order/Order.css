@@ -1,0 +1,11 @@
+.shipping{
+    display: flex;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 10ox;
+}
+.price{
+    margin-left: 30px;
+}
