@@ -1,0 +1,12 @@
+.header-logo>img{
+    height:100px;
+    width:30%;
+    margin: auto;
+   
+
+
+}
+.header-logo{
+    margin-top: 10px;;
+    border: 1px solid red;
+}
