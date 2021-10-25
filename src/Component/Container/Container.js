@@ -1,8 +1,10 @@
 import React from 'react';
+import DisplayProduct from '../DisplayProduct/DisplayProduct';
 import Header from '../Header/Header';
 import NabBar from '../NavBar/NabBar';
 import './Container.css'
 const Container = () => {
+    
     return (
         <div>
            <Header/>
@@ -10,10 +12,10 @@ const Container = () => {
            <div className="display-section">
                <div className="product">
                  
-                 left
+              <DisplayProduct/>
                </div>
                <div className="order-summary">
-                  right
+                 <h3>Order Summary</h3>
                </div>
            </div>
         </div>

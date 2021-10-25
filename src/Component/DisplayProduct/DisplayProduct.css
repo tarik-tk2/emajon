@@ -1,0 +1,7 @@
+.product{
+    display: flex;
+    text-align: left;
+}
+.cart-features{
+    display: flex;
+}
