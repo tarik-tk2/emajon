@@ -2,6 +2,9 @@ import React from 'react';
 import Feature from '../Feature/Feature';
 import './DisplayProduct.css'
 import './DisplayProduct.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faShoppingCart, faShoppingBasket  } from '@fortawesome/free-solid-svg-icons'
+
 
 const DisplayProduct = (props) => {
 const{name,img,price,features,stock,seller,star}=props.data;
@@ -21,7 +24,8 @@ let total=0;
                     <div className="add-cart">
                         <p><span>$ {price}</span></p>
                         <p>only {stock} left in stock -order now</p>
-                        <button onClick={()=>onclick(props.data)} > add to cart</button>
+                       
+                        <button onClick={()=>onclick(props.data)} > <FontAwesomeIcon icon={faShoppingCart} />add to cart</button>
                     </div>
                     <div className="features">
                         <p>ratings:{star}</p>
