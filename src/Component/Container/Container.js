@@ -13,6 +13,11 @@ const Container = () => {
           .then(response=>response.json())
           .then(data=>setProducts(data));
        },[])
+       const [cart,setCart]=useState([])
+       const handleCart=(data)=>{
+         const newCart=[...cart,data]
+         setCart(newCart)
+       }
     return (
         <div>
            <Header/>
@@ -20,11 +25,11 @@ const Container = () => {
            <div className="display-section">
                <div className="product">
                  
-            {products.map(product => (<DisplayProduct key ={product.key} data={product}/>))}
+            {products.map(product => (<DisplayProduct key ={product.key} onclick={handleCart} data={product}/>))}
                </div>
                <div className="order-summary">
                    <h3>Order Summary</h3>
-                <Order/>
+                <Order cart={cart}/>
                </div>
            </div>
         </div>

@@ -1,9 +1,14 @@
 import React from 'react';
 import './Order.css'
-const Order = () => {
+const Order = (props) => {
+    const{price}=props.cart;
+    const length=props.cart.length;
+    console.log(price)
+    
+    
     return (
         <div>
-          <h4>Items Order: 0</h4>
+          <h4>Items Order: {length}</h4>
           <div className="shipping">
              <div>
                  <p>items:</p>
@@ -14,9 +19,9 @@ const Order = () => {
                
              </div>
              <div className="price">
-                 <p>$0</p>
-                 <p>$0</p>
-                 <p>$0</p>
+                 <p>{length}</p>
+                 <p>${(length)>0?35:0}</p>
+                 <p>$</p>
                  <p>$0</p>
                  <p>$0</p>
              </div>
