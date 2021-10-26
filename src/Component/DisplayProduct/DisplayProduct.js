@@ -6,6 +6,8 @@ import './DisplayProduct.css'
 const DisplayProduct = (props) => {
 const{name,img,price,features,stock,seller,star}=props.data;
 const {onclick}=props;
+let total=0;
+
 
     return (
         <div className="display-product">
