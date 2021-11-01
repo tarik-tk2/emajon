@@ -3,13 +3,13 @@ import Feature from '../Feature/Feature';
 import './DisplayProduct.css'
 import './DisplayProduct.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faShoppingCart, faShoppingBasket  } from '@fortawesome/free-solid-svg-icons'
+import {faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 
 const DisplayProduct = (props) => {
 const{name,img,price,features,stock,seller,star}=props.data;
 const {onclick}=props;
-let total=0;
+
 
 
     return (
